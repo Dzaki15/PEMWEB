@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 5 - Formulir Mahasiswa</title>
+    <style>
+        /* Mengatur tampilan umum halaman */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+        }
+
+        /* Gaya untuk kontainer form */
+        .form-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+
+        /* Gaya untuk judul */
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        /* Gaya untuk tabel form */
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        /* Gaya untuk radio button dan checkbox */
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        /* Gaya untuk tombol submit */
+        input[type="submit"] {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+
+        /* Responsif untuk layar kecil */
+        @media (max-width: 600px) {
+            .form-container {
+                padding: 20px;
+            }
+
+            input[type="submit"] {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Belajar Membuat Formulir</h1>
+
+        <form action="">
+            <table>
+                <tr>
+                    <td>Nama</td>
+                    <td><input type="text" name="nama" placeholder="Masukkan nama"></td>
+                </tr>
+                <tr>
+                    <td>NIM</td>
+                    <td><input type="text" name="nim" placeholder="Masukkan NIM"></td>
+                </tr>
+                <tr>
+                    <td>Tempat Lahir</td>
+                    <td><input type="text" name="tempat lahir" placeholder="Masukkan tempat lahir"></td>
+                </tr>
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td><input type="date" name="tanggal lahir"></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>
+                        <input type="radio" name="jk" value="laki-laki"> Laki-laki <br>
+                        <input type="radio" name="jk" value="perempuan"> Perempuan <br>
+                        <input type="radio" name="jk" value="unknow"> Unknow <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td><textarea name="alamat" cols="30" rows="5" placeholder="Masukkan alamat"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Hobi</td>
+                    <td>
+                        <input type="checkbox" name="hobi" value="membaca"> Membaca <br>
+                        <input type="checkbox" name="hobi" value="menulis"> Menulis <br>
+                        <input type="checkbox" name="hobi" value="menonton"> Menonton <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Program Studi</td>
+                    <td>
+                        <select name="program studi">
+                            <option value="sistem informasi kelautan">Sistem Informasi Kelautan</option>
+                            <option value="logistik kelautan">Logistik Kelautan</option>
+                            <option value="PGSD">PGSD</option>
+                            <option value="PGPAUD">PGPAUD</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+
+            <input type="submit" value="Simpan">
+        </form>
+    </div>
+</body>
+</html>

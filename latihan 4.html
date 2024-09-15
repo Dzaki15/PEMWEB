@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 4 - Tabel Mahasiswa</title>
+    <style>
+        /* Mengatur gaya umum untuk halaman */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        /* Kontainer untuk tabel */
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            max-width: 900px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+
+        /* Gaya judul */
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        /* Gaya tabel */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table th, table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: #3498db;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        table td {
+            background-color: #f9f9f9;
+        }
+
+        /* Hover efek pada baris tabel */
+        table tr:hover td {
+            background-color: #f1f1f1;
+        }
+
+        /* Gaya link profil */
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsif untuk layar kecil */
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+
+            table th, table td {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Belajar Membuat Tabel Mahasiswa</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>NIM</th>
+                    <th>Nama</th>
+                    <th>Jenis Kelamin</th>
+                    <th>Kelas</th>
+                    <th>Link Profil</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2305171</td>
+                    <td>Syamil</td>
+                    <td>Laki-laki</td>
+                    <td>SIK B</td>
+                    <td><a href="syamil.html">Klik disini</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2305172</td>
+                    <td>Habibi</td>
+                    <td>Laki-laki</td>
+                    <td>SIK B</td>
+                    <td><a href="habibi.html">Klik disini</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>2305173</td>
+                    <td>Habibi</td>
+                    <td>Laki-laki</td>
+                    <td>SIK B</td>
+                    <td><a href="habibi.html">Klik disini</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
