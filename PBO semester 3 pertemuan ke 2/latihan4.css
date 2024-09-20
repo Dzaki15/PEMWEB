@@ -1,0 +1,93 @@
+/* CSS untuk mempercantik tampilan form */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+label {
+    grid-column: 1 / span 2;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+    grid-column: 1 / span 2;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #3498db;
+}
+
+input[type="submit"] {
+    grid-column: 1 / span 2;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+    transform: scale(1.05); /* Membuat tombol sedikit membesar */
+}
+
+input[type="submit"]:active {
+    transform: scale(0.98); /* Efek sedikit mengecil saat ditekan */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+td {
+    border-bottom: 1px solid #ccc;
+}
