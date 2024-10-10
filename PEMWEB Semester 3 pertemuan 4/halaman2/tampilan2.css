@@ -1,0 +1,150 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ffc107, #00e676);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 100px; /* Space for sticky navbar */
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff9800;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.join-btn {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Main Section */
+.main-section {
+    display: flex;
+    gap: 50px;
+    padding: 50px;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.left-side {
+    width: 50%;
+}
+
+.left-side h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.left-side p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.personal-info {
+    margin-top: 50px;
+}
+
+.info-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-item p {
+    font-size: 16px;
+    color: #333;
+}
+
+.right-side {
+    width: 50%;
+}
+
+/* Profile Card */
+.profile-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.profile-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.profile-card h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
+}
+
+.profile-card p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.profile-card .title {
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #ff9800;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Information - Tegar Dzaki</title>
+  <link rel="stylesheet" href="tampilan.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="nav-bar">
+    <div class="logo">TEGAR DZAKI</div>
+    <nav>
+      <ul>
+        <li><a href="file:///C:/SEMESTER%203/PEMWEB%20Semester%203%20tugas%20membuat%20web/halaman2/index2.html">About Me</a></li>
+        <li><a href="file:///C:/SEMESTER%203/PEMWEB%20Semester%203%20tugas%20membuat%20web/halaman3/index3.html">Achievements</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-buttons">
+      <input type="text" placeholder="Search">
+      <button class="join-btn">Contact Me</button>
+    </div>
+  </header>
+
+  <!-- Main Section -->
+  <main class="main-section">
+    <div class="left-side">
+      <h1>Welcome to Tegar Dzaki's Personal Page</h1>
+      <p>Hello! I am Tegar Dzaki, a passionate and dedicated individual involved in various leadership and community activities. Here you can learn more about my achievements, projects, and how to get in touch!</p>
+      <a href="file:///C:/SEMESTER%203/PEMWEB%20Semester%203%20tugas%20membuat%20web/halaman2/index2.html" class="find-btn">Learn More About Me</a>
+
+
+      <!-- Personal Info -->
+      <div class="personal-info">
+        <h3>INFO:</h3>
+        <div class="info-items">
+          <div class="info-item">
+            <p>Name: Tegar Dzaki H.</p>
+          </div>
+          <div class="info-item">
+            <p>Field: Leadership and Community Engagement</p>
+          </div>
+          <div class="info-item">
+            <p>Achievements: Awarded Best Young Leader 2023</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Side with Personal Image -->
+    <div class="right-side">
+      <div class="profile-card">
+        <img src="./WhatsApp Image 2024-05-10 at 15.20.22_76b7ecc4.jpg" alt="Tegar Dzaki's Photo">
+        <h2>Tegar Dzaki H.</h2>
+        <p>A passionate leader with a strong dedication to community service and organizational leadership.</p>
+        <span class="title">Leader & Community Activist</span>
+        <button class="contact-btn">Contact Me</button>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
+<!-- Contact Modal -->
+<div id="contactModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2>Contact Tegar Dzaki</h2>
+      <form>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+  
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+  
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" required></textarea>
+  
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+  
+  <!-- Theme Toggle Button -->
+  <button id="themeToggle" class="theme-btn">Dark Mode</button>
+  
+  <script>
+    const themeBtn = document.querySelector('.theme-btn');
+  
+    // Event listener untuk tombol dark mode
+    themeBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-theme'); // Toggle kelas dark-theme
+      
+      // Simpan preferensi mode pengguna ke localStorage
+      if (document.body.classList.contains('dark-theme')) {
+        localStorage.setItem('theme', 'dark');
+      } else {
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  
+    // Cek preferensi mode pengguna di localStorage saat halaman dimuat
+    window.addEventListener('load', () => {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'dark') {
+        document.body.classList.add('dark-theme');
+      }
+    });
+  </script>
+  
